@@ -25,6 +25,4 @@ jobs:
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
           PROJECT_FILE_PATH: src/SimpleResult/SimpleResult.csproj
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-          VERSION_STATIC: 1.0.1          #${{github.ref_name}}
-          TAG_COMMIT: false
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}          
